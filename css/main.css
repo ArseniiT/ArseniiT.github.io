@@ -227,7 +227,7 @@ footer .container > * {
 	text-align: center;
 	animation: logoNameTurn 5s infinite linear;
 	margin-top: 61px;
-	color: #fff;
+	color: rgba(147, 62, 177, 1);
 
 }
 
