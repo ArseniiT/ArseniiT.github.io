@@ -1,12 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Arsenii's github test page</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css">
+	
+	<title>Arsenii's homepage</title>
 </head>
 <body>
-  <h3>Welcome to my homepage!2</h3>
+
+
+	<header>
+		<div class="container">
+			<div class="heading clearfix">
+				<div class="logo">
+					<a href="https://github.com/ArseniiT">
+						<div class="logo-ars">
+							<div class="logo-line">
+						&lt; <span id="logo-name">arseniit</span> /&gt;
+							</div>
+						</div>
+					</a>
+				</div>
+				
+
+				<nav>
+					<ul class="menu">
+						<li>
+							<a href="#">Home</a>
+						</li>						
+						<li>
+							<a href="#" onclick="slowScroll('#portfolio')">Portfolio</a>
+						</li>
+						<li>
+							<a href="#" onclick="slowScroll('#about')">About me</a>
+						</li>
+						<li>
+								<a href="#" onclick="slowScroll('#cv')">CV</a>
+							</li>
+						<li>
+							<a href="#" onclick="slowScroll('#contact')">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="titles">
+				<div class="titles__first">
+					Welcome To My homepage!
+				</div>
+				<h1>
+					It’s nice to Meet you
+				</h1>
+			</div>
+			<!-- <a class="button" href="#">Contact me</a> -->
+		</div>
+	</header>
+
+
+	
+
+	<section id="portfolio">
+		<div class="container">
+			<div class="title">
+				<h2>
+					My portfolio
+				</h2>
+				<p>
+					Here is my web projects. 
+				</p>
+			</div>
+			<div class="works clearfix">
+
+				<div class="services__item">					
+					<h3>Calorie Counter</h3>
+					<p>Java app realized with Spring, Hibernate, PostgreSQL</p>
+					<div class="img__box">
+					<a href="https://caloriecounterjava.herokuapp.com/meals">
+						<img src="img/img1.jpg" alt="Work">
+					</a>
+				</div>
+				</div>
+
+				<div class="services__item">					
+					<h3>Library</h3>
+					<p>Java CRUD app realized with Spring Boot, Hibernate, MySQL</p>
+					<div class="img__box">
+					<a href="https://bookcrud.herokuapp.com/">
+						<img src="img/img2.jpg" alt="Work">
+					</a>
+				</div>
+				</div>
+
+				<div class="services__item">					
+						<h3>Canadian Tire menu</h3>
+						<p>JS script for dropdown menu and pushed it on openuserjs.org</p>
+						<div class="img__box">
+						<a href="https://github.com/ArseniiT/CanadianTireMenu">
+							<img class="hover-anim" src="img/ct.gif" alt="Work">
+							<img class="hover-jpg" src="img/catire.jpg" alt="Work">
+						</a>
+						
+					</div>
+					</div>
+			</div>
+
+			<div class="works clearfix">
+					<div class="services__item">					
+						<h3>2048</h3>
+						<p>Popular game which I coded on pure JavaScript and pushed on GitHub</p>
+						<div class="img__box">
+						<a href="https://arseniit.github.io/2048JS/">
+							<img src="img/img4.jpg" alt="Work">
+						</a>
+					</div>
+					</div>
+					<div class="services__item">					
+						<h3>Kijiji infinity scrolling</h3>
+						<p>JS script for autoloading with scrolling down. Add new items from next page.</p>
+						<div class="img__box" onmouseover="Play()" onmouseout="Pause()">
+						<a href="https://github.com/ArseniiT/KijijiInfiniteScrolling">
+							<video class="hover-anim" id="kijiji-video" ><source src="img/kijiji.mp4" type="video/mp4"></video>
+							<img class="hover-jpg" src="img/kijiji.jpg" alt="Work">
+						</a>
+					</div>
+					</div>
+					<div class="services__item">					
+							<h3>Snake</h3>
+							<p>Famous classic game realized on pure Javascript and pushed on GitHub</p>
+							<div class="img__box">
+							<a href="https://arseniit.github.io/docs/">
+								<img src="img/img3.jpg" alt="Work">
+							</a>
+							
+						</div>
+						</div>
+				</div>
+
+
+		</div>
+	</section>
+
+	<section id="about">
+			<div class="container">
+				<div class="title">
+					<h2>
+						About me
+					</h2>
+					<p>
+						A litle story about me. 
+					</p>
+				</div>
+				<p>Hello, my name is Arsenii. Many years ago my neighbor saw me for the first time with a computer. Theoretically, drawing in the notebook components pc, he told me about the miracle of the machine, which can itself assume, draw and do everything you want.</p>
+				<p>I've been programming since last years at school. At first it was Basic. After school on a summer vacation of fun for the sake of I did a game on ActionScript in Flash.</p>
+				<p>Then in the technical school these were languages ​​from Pascal and Basic6 to VBA, Delfi, SQL. At the institute, we studied C ++.</p>
+				<p>In 2015, I decided to try Java and it got me excited. I finished the Java Core courses. Then I went to an internship where we used Java technologies: Spring, Hibernate.</p>
+				<p>But now the projects are not limited to a single language and therefore my circle of knowledge began to be replenished with new languages ​​and technologies. This, for example, PHP, JavaScript, VueJs, aJax, jQuery, HTML5, CSS3 and more. Every day I practice something new in web.</p><br>
+				<p>Thank you for reading.</p>
+  <br><br>
+P.S. Just for note. I found my first <a href="http://kylesh.narod.ru/index2.html">homepage</a> from 2004. It was created with using frames and Flash.
+					</p>
+		
+			</div>
+		</section>
+
+	<section id="cv">
+			<div class="container">
+				<div class="title">
+					<h2>
+						My CV
+					</h2>
+					<p>
+						Here you can download my CV.  
+					</p>
+				</div>
+				<div class="services clearfix">
+					
+					<div class="cv__item">
+							<a href="#">
+						<img src="img/icon-cv.png" alt="Service">
+						</a>
+						<h3>My CV</h3>
+						<p>
+							Click <a href="#">here</a> for downloading my CV on *.doc format.
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		<div id="bottom">
+		<section id="contact">
+				<div class="container">
+					<div class="title">
+						<h2>
+							Contacts
+						</h2>
+						<p>
+							Don't hesitate to contact me 
+						</p>
+					</div>
+					<div class="services clearfix">
+						<div class="services__item">
+								<a href="https://github.com/ArseniiT">
+							<img src="img/icon1.png" alt="Service">
+							</a>
+							<h3>See my GitHub</h3>
+							<p>
+								Here you can see the code of my differents projects.
+							</p>
+						</div>
+						<div class="services__item">
+							<a href="https://www.linkedin.com/in/arseniit/">
+								<img src="img/icon2.png" alt="Service">
+							</a>
+							<h3>Contact me on LinkedIn</h3>
+							<p>
+								A little bit about my career and studies.
+							</p>
+						</div>
+						<div class="services__item">
+								<a href="tel:+15146383044">
+							<img src="img/icon3.png" alt="SWork">
+							</a>
+							<h3>Call me at +1 514 638-3044</h3>
+							<p>
+								Usualy I answer right away. You can call me everytime everyday.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<footer>
+					<div class="container">
+						<h4><a id="a-footer" href="#">Back on top</a></h4>
+						
+						<h4><span>&copy; 2018 &lt;arseniit/&gt;</span></h4>
+					</div>
+				</footer>
+
+			</section>
+	
+		<!-- <section>
+			<div class="container">
+				
+			</div>
+		</section>
+
+	<section>
+		<div class="container">
+			
+		</div>
+	</section> -->
+
+</div>
+
+	<script src="/byMaket/js/main.js"></script>
+	
 </body>
 </html>

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+body {
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #222222;
+}
+
+.clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+header {
+	background: url(../img/first-bg.jpg) no-repeat center top / cover;
+	background-position:0px -30px;
+	
+	height: 100vh;
+}
+
+.container {
+	width: 930px;
+	margin: 0 auto;
+}
+
+nav {
+	float: right;
+	margin-top: 45px;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 41px;
+}
+
+.menu a {
+	color: #ffec0b;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.titles__first {
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 180px;
+}
+
+h1 {
+	font-size: 75px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 15px;
+}
+
+.title {
+	padding-top: 110px;
+}
+
+.title h2 {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.title p {
+	color: #000000;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 8px;
+}
+
+.services {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.services__item	{
+	width: 270px;
+	float: left;
+	text-align: center;
+}
+
+.cv__item {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.img__box {
+	height: 301px;
+	width: 291px;
+	box-shadow: 8px 8px 5px grey;
+	transition-duration: .2s;
+}
+.img__box:hover {
+	height: 301px;
+	width: 291px;
+	box-shadow: 15px 15px 10px grey;
+	transform: rotateZ(-0.4deg);
+}
+
+.hover-anim {
+	display: none;
+}
+.img__box:hover .hover-anim {
+	display: block;
+}
+.img__box:hover .hover-jpg {
+	display: none;
+}
+
+
+.services__item h3 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.services__item p {
+	color: #000000;
+	font-size: 18px;
+	line-height: 1.55em;
+}
+
+.services__item:last-child {
+	float: right;
+}
+
+.services__item:nth-child(2) {
+	margin-left: 60px;
+}
+
+#services {
+	padding-bottom: 120px;
+}
+
+#portfolio {
+	background: url(../img/portfolio-bg.jpg) no-repeat center top / cover;
+	padding-bottom: 60px;
+}
+
+#cv {
+	background: url(../img/cv-bg.jpg) no-repeat center top / cover;
+	padding-bottom: 60px;
+}
+
+#about {
+	background: url(../img/about-bg-book.jpg) no-repeat center top / cover;
+	padding-bottom: 60px;
+}
+
+.works {
+	margin-top: 10px;
+}
+
+.works img {
+	float: left;
+}
+
+.works img:nth-child(2) {
+	margin-left: 29px;
+}
+
+.works img:last-child {
+	float: right;
+}
+
+footer .container > * {
+	text-align: center;
+}
+
+#contact a:hover img, #cv a:hover img  {
+	filter: drop-shadow(2px 2px 2px rgb(73, 73, 73));
+}
+
+
+#contact:hover {
+	background-position:0px -200px;
+}
+
+#contact{
+	background: url(../img/footer-bg.jpg) no-repeat center center;
+	background-position:0px 0px;
+	height: 100vh;
+	transition-duration: 1.5s;
+}
+
+#contact img, #cv img{
+	filter: drop-shadow(1px 1px 1px rgba(129, 129, 129));
+}
+
+/* ------------------- logo -----------------------*/
+.logo {
+	margin-top: 40px;
+	float: left;
+}
+
+.logo-ars {
+	font-family: 'Orbitron', sans-serif;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border-top: #ffffff solid 2px;
+	box-shadow: 0px -3px 1px rgba(255, 255, 255, 0.75);
+	animation: logoTurn 5s infinite linear;
+
+}
+
+.logo-line {
+	
+	/* text-transform: uppercase; */
+	text-align: center;
+	animation: logoNameTurn 5s infinite linear;
+	margin-top: 61px;
+	color: #fff;
+
+}
+
+#logo-name {
+	color: #f9275e;
+}
+
+@keyframes logoTurn{
+	from {
+		transform:rotate(0deg);
+}
+to {
+		transform:rotate(360deg);
+}
+
+}
+
+@keyframes logoNameTurn{
+	from {
+		transform:rotate(0deg);
+}
+to {
+		transform:rotate(-360deg);
+}
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.logo:hover + .logo-ars {
+	animation: logoTurn 1s infinite linear;
+	
+}
+
+.logo:hover + .logo-line {
+	animation: logoNameTurn 1s infinite linear;
+	
+}
+
+
