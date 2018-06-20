@@ -195,9 +195,9 @@ footer .container > * {
 
 #contact{
 	background: url(../img/footer-bg.jpg) no-repeat center center;
-	background-position:0px 0px;
+	background-position:0px -140px;
 	height: 100vh;
-	transition-duration: 1.5s;
+	transition-duration: 3s;
 }
 
 #contact img, #cv img{
