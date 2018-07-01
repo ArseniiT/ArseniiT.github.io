@@ -29,6 +29,11 @@ header {
 	margin: 0 auto;
 }
 
+.container__portfolio {
+	width: 930px;
+	margin: 0 auto;
+}
+
 nav {
 	float: right;
 	margin-top: 45px;
@@ -72,6 +77,11 @@ h1 {
 	padding-top: 110px;
 }
 
+.portfolio__title {
+	padding-top: 50px;
+	margin: 0px auto;
+}
+
 .title h2 {
 	font-size: 40px;
 	font-weight: bold;
@@ -106,15 +116,11 @@ h1 {
 .img__box {
 	height: 301px;
 	width: 291px;
+	position: relative;
 	box-shadow: 8px 8px 5px grey;
 	transition-duration: .2s;
 }
-.img__box:hover {
-	height: 301px;
-	width: 291px;
-	box-shadow: 15px 15px 10px grey;
-	transform: rotateZ(-0.4deg);
-}
+
 
 .hover-anim {
 	display: none;
@@ -152,12 +158,13 @@ h1 {
 
 #portfolio {
 	background: url(../img/portfolio-bg.jpg) no-repeat center top / cover;
-	padding-bottom: 60px;
+	height: 100vh;
 }
 
 #cv {
 	background: url(../img/cv-bg.jpg) no-repeat center top / cover;
-	padding-bottom: 60px;
+	/* padding-bottom: 60px; */
+	height: 100vh;
 }
 
 #about {
@@ -204,6 +211,33 @@ footer .container > * {
 	filter: drop-shadow(1px 1px 1px rgba(129, 129, 129));
 }
 
+.portfolio__item h3{
+	text-align: center;
+}
+
+
+/* ------------------- slider -----------------------*/
+
+.descr {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 930px;
+	height: 103%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding: 80px 0 0 0;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.25s;
+}
+
+.img__box:hover .descr {
+	opacity: 1;
+	cursor: pointer;
+}
+
+
 /* ------------------- logo -----------------------*/
 .logo {
 	margin-top: 40px;
@@ -217,7 +251,7 @@ footer .container > * {
 	border-radius: 50%;
 	border-top: #ffffff solid 2px;
 	box-shadow: 0px -3px 1px rgba(255, 255, 255, 0.75);
-	animation: logoTurn 5s infinite linear;
+	animation: logoTurn 25s infinite linear;
 
 }
 
@@ -225,7 +259,7 @@ footer .container > * {
 	
 	/* text-transform: uppercase; */
 	text-align: center;
-	animation: logoNameTurn 5s infinite linear;
+	animation: logoNameTurn 25s infinite linear;
 	margin-top: 61px;
 	color: rgba(147, 62, 177, 1);
 
@@ -270,14 +304,5 @@ a:hover {
 	text-decoration: underline;
 }
 
-.logo:hover + .logo-ars {
-	animation: logoTurn 1s infinite linear;
-	
-}
-
-.logo:hover + .logo-line {
-	animation: logoNameTurn 1s infinite linear;
-	
-}
 
 

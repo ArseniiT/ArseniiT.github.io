@@ -5,6 +5,10 @@
 	<link rel="icon" href="./img/favicon.png" sizes="16x16 32x32" type="image/png">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<!-- slider -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>				
 	
 	<title>Arsenii's homepage</title>
 </head>
@@ -61,82 +65,79 @@
 	
 
 	<section id="portfolio">
-		<div class="container">
-			<div class="title">
+		<div class="container container__portfolio">
+			<div class="title portfolio__title">
 				<h2>
 					My portfolio
 				</h2>
-				<p>
-					Here is my web projects. 
-				</p>
 			</div>
-			<div class="works clearfix">
 
-				<div class="services__item">					
-					<h3>Calorie Counter</h3>
-					<p>Java app realized with Spring, Hibernate, PostgreSQL</p>
+			
+			<div class="slider">
+
+				<div class="portfolio__item">		<!-- .services__item					 -->			
+					<h3>Calorie Counter java app</h3>
 					<div class="img__box">
-					<a href="https://caloriecounterjava.herokuapp.com/meals">
-						<img src="img/img1.jpg" alt="Work">
-					</a>
-				</div>
-				</div>
-
-				<div class="services__item">					
-					<h3>Library</h3>
-					<p>Java CRUD app realized with Spring Boot, Hibernate, MySQL</p>
-					<div class="img__box">
-					<a href="https://bookcrud.herokuapp.com/">
-						<img src="img/img2.jpg" alt="Work">
-					</a>
-				</div>
-				</div>
-
-				<div class="services__item">					
-						<h3>Canadian Tire menu</h3>
-						<p>JS script for dropdown menu and pushed it on openuserjs.org</p>
-						<div class="img__box">
-						<a href="https://github.com/ArseniiT/CanadianTireMenu">
-							<img class="hover-anim" src="img/ct.gif" alt="Work">
-							<img class="hover-jpg" src="img/catire.jpg" alt="Work">
+						<span class="descr">Java app realized with Spring, Hibernate, PostgreSQL</span>
+						<a href="https://caloriecounterjava.herokuapp.com/meals">
+							<img src="img/img1.jpg" alt="Work">
 						</a>
-						
 					</div>
-					</div>
-			</div>
+				</div>
 
-			<div class="works clearfix">
-					<div class="services__item">					
-						<h3>2048</h3>
-						<p>Popular game which I coded on pure JavaScript and pushed on GitHub</p>
-						<div class="img__box">
+				<div class="portfolio__item">					
+					<h3>Library java CRUD app</h3>
+					<div class="img__box">
+							<span class="descr">Java CRUD app realized with Spring Boot, Hibernate, MySQL</span>
+						<a href="https://bookcrud.herokuapp.com/">
+							<img src="img/img2.jpg" alt="Work">
+						</a>
+					</div>
+				</div>
+
+				<div class="portfolio__item">					
+					<h3>Canadian Tire menu</h3>
+					<div class="img__box">
+						<span class="descr">JS script for dropdown menu and pushed it on openuserjs.org</span>
+						<a href="https://github.com/ArseniiT/CanadianTireMenu">
+							<img class="hover-anim" src="img/ct.gif" alt="Work">							
+						</a>						
+					</div>
+				</div>				
+
+				<div class="portfolio__item">					
+					<h3>2048  game</h3>
+					<div class="img__box">
+						<span class="descr">Popular game which I coded on pure JavaScript and pushed on GitHub</span>
 						<a href="https://arseniit.github.io/2048JS/">
 							<img src="img/img4.jpg" alt="Work">
 						</a>
 					</div>
-					</div>
-					<div class="services__item">					
-						<h3>Kijiji infinity scrolling</h3>
-						<p>JS script for autoloading with scrolling down. Add new items from next page.</p>
-						<div class="img__box" onmouseover="Play()" onmouseout="Pause()">
+				</div>
+
+				<div class="portfolio__item">    
+					<h3>Kijiji infinity scrolling</h3>
+					<div class="img__box" onmouseover="Play()" onmouseout="Pause()">
+						<span class="descr">JS script for autoloading with scrolling down. Add new items from next page.</span>
 						<a href="https://github.com/ArseniiT/KijijiInfiniteScrolling">
 							<video class="hover-anim" id="kijiji-video" ><source src="img/kijiji.mp4" type="video/mp4"></video>
 							<img class="hover-jpg" src="img/kijiji.jpg" alt="Work">
 						</a>
 					</div>
-					</div>
-					<div class="services__item">					
-							<h3>Snake</h3>
-							<p>Famous classic game realized on pure Javascript and pushed on GitHub</p>
-							<div class="img__box">
-							<a href="https://arseniit.github.io/docs/">
-								<img src="img/img3.jpg" alt="Work">
-							</a>
-							
-						</div>
-						</div>
 				</div>
 
+				<div class="portfolio__item">					
+					<h3>Snake game</h3>
+					<div class="img__box">
+						<span class="descr">Famous classic game realized on pure Javascript and pushed on GitHub.</span>
+						<a href="https://arseniit.github.io/docs/">
+							<img src="img/img3.jpg" alt="Work">
+						</a>							
+					</div>
+				</div>
+
+			</div>
+				
 
 		</div>
 	</section>
@@ -256,7 +257,9 @@ P.S. Just for note. I found my first <a href="http://kylesh.narod.ru/index2.html
 
 </div>
 
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
+	
 	
 </body>
 </html>
