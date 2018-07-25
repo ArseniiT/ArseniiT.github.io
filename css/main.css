@@ -27,6 +27,7 @@ header {
 .container {
 	width: 930px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .container__portfolio {
@@ -171,6 +172,10 @@ h1 {
 	padding-bottom: 60px;
 }
 
+#about p:nth-child(1n+2) {
+	text-indent: 1em;
+}
+
 .works {
 	margin-top: 10px;
 }
@@ -185,6 +190,14 @@ h1 {
 
 .works img:last-child {
 	float: right;
+}
+
+.me {
+	position: absolute;
+	right: 50px;
+	top: 40px;
+	border-radius: 50%;
+	height: 120px;
 }
 
 footer .container > * {
